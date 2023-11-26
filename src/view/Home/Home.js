@@ -4,14 +4,14 @@ import I18n from './../../utils/i18n'
 
 function Home(){
    const usersCount = 105;
-    // const [lang , setLang] = useState("mr")
     return(
         <>
+        <div className="ietin-container">
         <h1>{I18n('welcomeMessage')}</h1>
         <p>{I18n('normalMessage')} </p>
         <h3>{I18n('greetingMessage')}</h3>
         <h5>{I18n('endMessage')}</h5>
-        <select
+        <select className="ietin-select"
         defaultValue={localStorage.getItem("lang")}
          onChange={(e)=>{
             localStorage.setItem("lang",e.target.value)
@@ -23,6 +23,7 @@ function Home(){
             <option value="en">English</option>
         </select>
         <p>{I18n("userStatMessage" , "<studentCount>",usersCount)}</p>
+        </div>
         </>
     )
 }

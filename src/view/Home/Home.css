@@ -1,0 +1,21 @@
+.ietin-container{
+   
+    width: fit-content;
+    padding: 20px 130px;
+    font-size: 20px;
+    border-radius: 15px;
+    display: block;
+    margin: 130px auto;
+    align-items:center;
+    box-shadow: 0 0 10px #d74a4a;
+    position: relative;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,78,0.48792016806722693) 35%, rgba(0,212,255,1) 100%);
+    }
+.ietin-select{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size: 20px;
+    border: none;
+    background-color: #00d4ff;
+}
